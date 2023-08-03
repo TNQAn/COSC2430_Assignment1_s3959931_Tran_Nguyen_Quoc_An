@@ -490,7 +490,7 @@ button {
 
 /* Best Seller */
 .best-seller {
-    padding: 64px 0;
+    padding: 78px 0;
     background-image: radial-gradient(
         circle at center center,
         rgb(255, 255, 255) 0%,
@@ -761,7 +761,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 16px;
+    column-gap: 8px;
 }
 
 .footer__social-item {
@@ -792,9 +792,4 @@ button {
     align-items: center;
     justify-content: center;
     column-gap: 16px;
-}
-
-.footer__bottom-item:hover {
-    scale: 1.02;
-    translate: 0 -2px;
 }
