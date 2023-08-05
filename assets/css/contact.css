@@ -1,0 +1,228 @@
+.label {
+    padding: 20px 0;
+}
+
+/* Label title */
+.label__title {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.label__title-heading {
+    color: #000;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+.label__title-desc {
+    margin-top: 20px;
+    color: #333;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+}
+
+/* Label contact */
+.label__contact {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 5px 50px;
+    background: rgb(255, 255, 255, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Label info */
+.label__contact-info {
+    position: relative;
+    padding: 30px;
+    width: 38%;
+    background: radial-gradient(
+        circle at center center,
+        rgb(225 244 255) 0%,
+        rgb(239, 249, 255) 100%
+    );
+    border-radius: 5px 0 0 50px;
+    overflow: hidden;
+}
+
+.label__contact-heading {
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.label__contact-desc {
+    margin-top: 20px;
+    color: #6f6f6f;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+
+.label__contact-item {
+    margin: 50px 0;
+}
+
+.label__contact-icon,
+.label__contact-social-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.label__contact-icon:hover,
+.label__contact-social-item:hover {
+    background-image: var(--secondary-color);
+}
+
+.label__contact-icon:hover i,
+.label__contact-social-item:hover i {
+    color: #fff;
+}
+
+.label__contact-socials {
+    margin-top: 120px;
+    display: flex;
+    column-gap: 8px;
+}
+
+.label__contact-circle {
+    position: absolute;
+    right: 55px;
+    bottom: 60px;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #7955f3;
+    opacity: 0.95;
+    filter: blur(2px);
+}
+
+.label__contact-circle--large {
+    right: -110px;
+    bottom: -110px;
+    z-index: 0;
+    width: 250px;
+    height: 250px;
+    background: var(--secondary-color);
+    filter: blur(1.8px);
+}
+
+/* Label contact form */
+.label__contact-form {
+    flex-grow: 1;
+    padding: 28px 32px;
+}
+
+.label__contact-form:has(:invalid) .label__box-submit {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.label__form-row {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 12px;
+}
+
+.label__form-row:last-child {
+    margin-bottom: 0;
+}
+
+.label__form-group {
+    flex-grow: 1;
+}
+
+.label__form-dropdown {
+    margin-bottom: 20px;
+}
+
+.label__form-group:focus-within .label__form-label {
+    color: var(--primary-color);
+}
+
+.label__form-group:focus-within .label__form-input,
+.label__form-group:focus-within .label__form-dropdown,
+.label__form-group:focus-within .label__form-textarea {
+    border-color: var(--primary-color);
+}
+
+.label__form-label,
+.label__form-input {
+    display: block;
+}
+
+.label__form-label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.label__form-label span {
+    color: red;
+    margin-left: 2px;
+}
+
+.label__form-dropdown,
+.label__form-input,
+.label__form-textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    caret-color: var(--primary-color);
+    border-bottom: 2px solid #e3e3e9;
+    padding: 4px 0 12px 0;
+    color: #0d0d3b;
+}
+
+.label__form-input::placeholder,
+.label__form-textarea::placeholder {
+    color: #bebfc9;
+    padding-left: 2px;
+}
+
+.label__box {
+    justify-content: flex-end;
+    column-gap: 12px;
+}
+
+.btn {
+    min-width: 110px;
+    width: 90px;
+    height: 46px;
+}
+
+.label__box-reset {
+    background-image: linear-gradient(135deg, #fdd819 10%, #e80505 100%);
+}
+
+.label__form-textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+.label__form-radio,
+.label__form-checkbox {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    margin-bottom: 16px;
+}
+
+.label__radio-group,
+.label__checkbox-group {
+    display: flex;
+}
+
+.label__radio-btn + .label__radio-btn,
+.label__checkbox-btn + .label__checkbox-btn {
+    margin-left: 24px;
+}
