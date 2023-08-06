@@ -1,0 +1,105 @@
+* {
+    background: transparent;
+}
+
+/* Fiction Books Head*/
+.fiction, .non-fiction {
+    padding-top: 12px;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.fiction__head, .non-fiction__head {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fiction__head::before, .non-fiction__head::before {
+    content: "";
+    position: absolute;
+    top: -210px;
+    left: -185px;
+    z-index: -1;
+    width: 150%;
+    height: 140%;
+    border-radius: 0 20px;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #dcfafe 10%, #c6e7ff 100%);
+    rotate: -10deg;
+}
+
+.fiction__content, .non-fiction__content {
+    width: 53%;
+}
+
+.fiction__heading, .non-fiction__heading {
+    color: #000;
+    font-size: 6.6rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.8px;
+}
+
+.fiction__heading strong, .non-fiction__heading strong {
+    background: linear-gradient(
+        90deg,
+        #17e3a6 0%,
+        #88deba 13.54%,
+        #57daf5 28.13%,
+        #9fa2ed 51.56%,
+        #fe5ae1 72.92%,
+        #ff669f 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fiction__desc, .non-fiction__desc {
+    margin-top: 20px;
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+
+.fiction__images, .non-fiction__images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    pointer-events: none;
+    
+}
+
+.fiction__img:first-child, .non-fiction__img:first-child {
+    width: 192px;
+    height: 284px;
+    object-fit: cover;
+    transform: rotate(9deg);
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.fiction__img:last-child, .non-fiction__img:last-child {
+    width: 153.6px;
+    height: 227.2px;
+    object-fit: cover;
+    transform: rotate(-9deg);
+    opacity: 0.95;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Fiction Books Main */
+.best-seller__inner:first-child {
+    margin-top: 40px;
+}
+
+.best-seller__inner + .best-seller__inner {
+    padding-top: 0px;
+}
+
+.best-seller__heading {
+    padding-top: 80px;
+}

@@ -635,6 +635,7 @@ button {
 
 .best-seller__wrapper .best-seller__item-heading {
     margin-top: 12px;
+    padding-right: 2px;
     text-align: left;
 }
 
