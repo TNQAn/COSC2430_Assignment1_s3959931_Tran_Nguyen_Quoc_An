@@ -224,7 +224,6 @@ Acknowledgement:
     .book__main-img {
         height: 60%;
         width: 60%;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     .book__sub-img {
@@ -236,7 +235,6 @@ Acknowledgement:
     .book__sub-img img {
         width: calc(((100% - 48px) / 3));
         height: 100%;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     .book__info {
