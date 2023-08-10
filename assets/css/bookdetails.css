@@ -85,14 +85,13 @@ Acknowledgement:
 /* Book images */
 .book__img {
     display: flex;
-    column-gap: 24px;
+    column-gap: 24px;    
     width: 50%;
     height: 540px;
     overflow: hidden;
 }
 
 .book__main-img {
-    width: 60%;
     height: 100%;
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -104,7 +103,6 @@ Acknowledgement:
 }
 
 .book__sub-img {
-    width: calc(((100% - 24px) / 3) * 60%);
     object-fit: cover;
     display: flex;
     row-gap: 12px;
@@ -113,6 +111,7 @@ Acknowledgement:
 
 .book__sub-img img {
     height: calc((100% - 24px) / 3);
+    width: 100%;
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: 0.2s;
@@ -178,6 +177,7 @@ Acknowledgement:
 }
 
 .book__cta-cart {
+    height: 52px;
     position: relative;
     min-width: 180px;
     display: flex;

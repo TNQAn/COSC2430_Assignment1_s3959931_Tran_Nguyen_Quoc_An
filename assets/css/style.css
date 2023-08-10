@@ -202,7 +202,7 @@ button {
     padding: 20px 21px;
     color: #333;
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .navbar__item:hover .navbar__sub-item {
@@ -311,7 +311,6 @@ button {
 .hero__images {
     margin-top: 82px;
     display: flex;
-    justify-content: space-evenly;
     align-items: flex-end;
     pointer-events: none;
 }
@@ -319,23 +318,20 @@ button {
 .hero__img:first-child {
     top: 0;
     left: 0;
-    width: 310px;
-    height: 468px;
+    width: 30%;
     object-fit: cover;
     transform: rotate(-15deg);
     translate: 18% -7%;
 }
 
 .hero__img:nth-child(2) {
-    width: 377px;
-    height: 570px;
+    width: 40%;
     object-fit: cover;
     z-index: 1;
 }
 
 .hero__img:last-child {
-    width: 310px;
-    height: 468px;
+    width: 30%;
     object-fit: cover;
     transform: rotate(15deg);
     translate: -18% -7%;
@@ -427,8 +423,8 @@ button {
 .gal__images {
     margin-top: 42px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-    grid-auto-rows: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-auto-rows: auto;
     grid-auto-flow: dense;
     gap: 18px;
 }
@@ -446,10 +442,6 @@ button {
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
         rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
         rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-}
-
-.gal__images--tiny {
-    grid-row: span 2;
 }
 
 .gal__images--small {
@@ -551,7 +543,7 @@ button {
 }
 
 .best-seller__row {
-    margin-top: 24px;
+    margin: 32px 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -560,6 +552,7 @@ button {
 
 .best-seller__item {
     padding: 20px 20px 50px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -580,9 +573,9 @@ button {
 }
 
 .best-seller__img {
-    margin-bottom: 24px;
-    max-width: 100%;
-    height: 380px;
+    margin: 12px 0 24px;
+    width: 100%;
+    height: 370px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -591,10 +584,11 @@ button {
 .best-seller__item--hidden {
     font-size: 1.6rem;
     font-weight: 700;
+    translate: 0 -12px;
 }
 
 .best-seller__item:hover .best-seller__item--hidden {
-    display: none;
+    visibility: hidden;
 }
 
 .best-seller__item-heading {
@@ -646,6 +640,7 @@ button {
     justify-content: space-between;
     width: 100%;
     transition: 0.3s ease-in-out;
+    column-gap: 12px;
     transform-origin: 0% 0%;
     visibility: hidden;
     opacity: 0;
@@ -764,6 +759,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     column-gap: 24px;
 }
 
@@ -774,7 +770,6 @@ button {
 
 .footer__bottom-item {
     display: inline-block;
-
     color: #333;
     font-size: 1.6rem;
     font-weight: 300;
@@ -782,6 +777,7 @@ button {
 
 .footer__social {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     column-gap: 8px;

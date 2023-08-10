@@ -65,13 +65,21 @@ Acknowledgement:
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- PC Header -->
     <header class="header">
         <div class="container">
             <div class="header-top">
+                <!-- Tablet/Mobile menu -->
+                <label for="menu-checkbox" class="ham-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </label>
+
                 <!-- Logo -->
                 <a href="../index.html">
-                    <div class="logo">
+                    <div class="logo logo-center">
                         <span class="logo__circle"></span>
                         <span class="logo__text">
                             <span class="logo__brand">Literary</span>
@@ -93,10 +101,10 @@ Acknowledgement:
                             <a href="#" class="navbar__link">Fiction</a>
                             <ul class="navbar__sub-item">
                                 <li class="navbar__sub-type">
-                                    <a href="../Sub-Category page/fiction.html#fantasy" class="sub-item">Fantasy</a>
+                                    <a href="#fantasy" class="sub-item">Fantasy</a>
                                 </li>
                                 <li class="navbar__sub-type">
-                                    <a href="../Sub-Category page/fiction.html#romance" class="sub-item">Romance</a>
+                                    <a href="#romance" class="sub-item">Romance</a>
                                 </li>
                             </ul>
                         </li>
@@ -118,16 +126,15 @@ Acknowledgement:
 
                         <!-- Navbar__item 4 -->
                         <li class="navbar__item">
-                            <a href="../Sub-Category page/children'sbooks.html" class="navbar__link">Children's
-                                Books</a>
+                            <a href="../Sub-Category page/children'sbooks.html" class="navbar__link">Children's Books</a>
                             <ul class="navbar__sub-item">
                                 <li class="navbar__sub-type">
                                     <a href="../Sub-Category page/children'sbooks.html#picturebooks"
                                         class="sub-item">Picture Books</a>
                                 </li>
                                 <li class="navbar__sub-type">
-                                    <a href="../Sub-Category page/children'sbooks.html#youngadult"
-                                        class="sub-item">Young Adult</a>
+                                    <a href="../Sub-Category page/children'sbooks.html#youngadult" class="sub-item">Young
+                                        Adult</a>
                                 </li>
                             </ul>
                         </li>
@@ -144,6 +151,85 @@ Acknowledgement:
                     <a href="#buy" class="btn header-action__sign_up">Buy Now</a>
                 </div>
             </div>
+        </div>
+    </header>
+
+    <!-- Tablet/Mobile header -->
+    <header class="mobile-header">
+        <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+
+        <!-- Overlay -->
+        <label for="menu-checkbox" class="menu-overlay"></label>
+
+        <!-- Menu content -->
+        <div class="menu-drawer">
+            <!-- Logo -->
+            <a href="../index.html">
+                <div class="logo logo-responsive">
+                    <span class="logo__circle"></span>
+                    <span class="logo__text">
+                        <span class="logo__brand">Literary</span>
+                        <span class="logo__brand logo__brand--small">Dreams</span>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Navbar -->
+            <nav class="navbar">
+                <ul class="navbar__list-visible">
+                    <!-- Navbar__item 1 -->
+                    <li class="navbar__item">
+                        <a href="../index.html" class="navbar__link">Home</a>
+                    </li>
+
+                    <!-- Navbar__item 2 -->
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Fiction</a>
+                        <ul class="navbar__sub-item--visible ">
+                            <li class="navbar__sub-type">
+                                <a href="#fantasy" class="sub-item">Fantasy</a>
+                            </li>
+                            <li class="navbar__sub-type">
+                                <a href="#romance" class="sub-item">Romance</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Navbar__item 3 -->
+                    <li class="navbar__item">
+                        <a href="../Sub-Category page/non-fiction.html" class="navbar__link">Non-Fiction</a>
+                        <ul class="navbar__sub-item--visible">
+                            <li class="navbar__sub-type">
+                                <a href="../Sub-Category page/non-fiction.html#BAF" class="sub-item">Business and
+                                    Finance</a>
+                            </li>
+                            <li class="navbar__sub-type">
+                                <a href="../Sub-Category page/non-fiction.html#self-help" class="sub-item">Self-help</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Navbar__item 4 -->
+                    <li class="navbar__item">
+                        <a href="../Sub-Category page/children'sbooks.html" class="navbar__link">Children's Books</a>
+                        <ul class="navbar__sub-item--visible">
+                            <li class="navbar__sub-type">
+                                <a href="../Sub-Category page/children'sbooks.html#picturebooks" class="sub-item">Picture
+                                    Books</a>
+                            </li>
+                            <li class="navbar__sub-type">
+                                <a href="../Sub-Category page/children'sbooks.html#youngadult" class="sub-item">Young
+                                    Adult</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Navbar__item 5 -->
+                    <li class="navbar__item">
+                        <a href="../Contact page/contact.html" class="navbar__link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 

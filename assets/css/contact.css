@@ -16,6 +16,53 @@ Acknowledgement:
 - Image source: https://www.pinterest.com/ , https://tiki.vn/ , https://shopee.vn/, https://www.amazon.com/
 */
 
+/* Cart */
+.book__cart {
+    font-size: 2.2rem;
+    position: relative;
+}
+
+.book__cart-info {
+    position: absolute;
+    top: 44px;
+    right: -6px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    min-height: 140px;
+    padding: 10px;
+    border-radius: 3px;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    scale: 0;
+    transform-origin: 100% 0%;
+    transition: 0.2s ease-in-out;
+}
+
+.book__cart-info::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    right: 6px;
+    border: 12px solid;
+    border-color: transparent transparent #fff;
+}
+
+.book__cart-desc {
+    font-size: 1.8rem;
+}
+
+.book__cart:hover .book__cart-info {
+    visibility: visible;
+    opacity: 1;
+    scale: 1;
+}
+
 .label {
     padding: 20px 0;
 }
@@ -232,8 +279,13 @@ Acknowledgement:
     display: flex;
     align-items: center;
     column-gap: 16px;
-    margin-bottom: 16px;
+    margin: 16px 0;
 }
+
+.label__form-radio {
+    margin-top: 0;
+}
+
 
 .label__radio-group,
 .label__checkbox-group {

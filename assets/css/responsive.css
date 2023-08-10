@@ -16,3 +16,440 @@ Acknowledgement:
 - Image source: https://www.pinterest.com/ , https://tiki.vn/ , https://shopee.vn/, https://www.amazon.com/
 */
 
+/* PC */
+@media screen and (min-width: 992px) {
+    /* Home Page */
+    /* Header */
+    .mobile-header {
+        display: none;
+    }
+
+    .ham-menu svg {
+        display: none;
+    }
+
+    /* Best Seller */
+    .see-all {
+        display: none;
+    }
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+    /* Home Page */
+    /* Header */
+    .header-top {
+        position: relative;
+        padding: 8px 0;
+    }
+
+    .logo-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar__list {
+        display: none;
+    }
+
+    .ham-menu svg {
+        width: 32px;
+        color: var(--primary-color);
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s ease;
+    }
+
+    .menu-drawer {
+        padding: 40px;
+        position: fixed;
+        inset: 0 60% 0 0;
+        background: #fff;
+        z-index: 101;
+        transform: translateX(-100%);
+        transition: 0.4s ease;
+    }
+
+    .menu-drawer .navbar__list-visible {
+        margin-top: 32px;
+    }
+
+    .menu-drawer .navbar__list-visible .navbar__link {
+        color: #000;
+        font-weight: 400;
+    }
+
+    .navbar__list-visible a {
+        display: block;
+    }
+
+    .navbar__sub-item--visible {
+        padding-left: 28px;
+    }
+
+    .navbar__sub-item--visible .sub-item {
+        border: none;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .logo-responsive {
+        font-size: 1rem;
+        position: relative;
+        display: inline-flex;
+    }
+
+    .navbar-visible {
+        display: block;
+    }
+
+    /* Hero */
+    .hero__info {
+        width: 95%;
+    }
+
+    .hero__info-heading {
+        font-size: 6.8rem;
+    }
+
+    /* Gallery */
+    .gal__images {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        grid-auto-rows: auto;
+    }
+
+    .gal__images--large {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .gal__images--medium {
+        grid-row: span 3;
+        grid-column: span 2;
+    }
+
+    /* Advertising */
+    .ad__row {
+        flex-wrap: wrap;
+        row-gap: 24px;
+    }
+
+    .ad__content {
+        width: 100%;
+    }
+
+    .ad__video {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .ad__video iframe {
+        margin: auto;
+    }
+
+    /* Footer */
+    .footer__top {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        row-gap: 24px;
+        padding: 40px;
+    }
+
+    .footer__top-logo {
+        display: none;
+    }
+
+    /* Sub-Category Page */
+    .fiction__head::before,
+    .non-fiction__head::before,
+    .childrensbooks__head::before {
+        display: none;
+    }
+
+    .fiction__content,
+    .non-fiction__content,
+    .childrensbooks__content {
+        width: 100%;
+    }
+
+    .fiction__heading,
+    .non-fiction__heading,
+    .childrensbooks__heading,
+    .fiction__desc,
+    .non-fiction__desc,
+    .childrensbooks__desc {
+        text-align: center;
+    }
+
+    .fiction__images,
+    .non-fiction__images,
+    .childrensbooks__images {
+        display: none;
+    }
+
+    /* Book Details Page */
+    .book__content,
+    .book__img {
+        flex-direction: column;
+    }
+
+    .book__img {
+        margin: 0 auto;
+        width: 80%;
+        height: 100%;
+        row-gap: 48px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book__main-img {
+        height: 60%;
+        width: 60%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .book__sub-img {
+        flex-direction: row;
+        column-gap: 24px;
+        align-items: center;
+    }
+
+    .book__sub-img img {
+        width: calc(((100% - 48px) / 3));
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .book__info {
+        margin: 12px auto 0;
+        padding: 24px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .book__cta {
+        justify-content: end;
+    }
+
+    /* Contact Page */
+    .label__contact {
+        flex-direction: column;
+        border-radius: 8px;
+    }
+
+    .label__contact-info {
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .label__form-row {
+        flex-direction: column;
+        margin: 32px 0;
+    }
+
+    .label__form-checkbox,
+    .label__form-radio {
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        row-gap: 22px;
+    }
+
+    .label__box {
+        flex-direction: row;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    /* Home Page */
+    /* Gallery */
+    .gal__images {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        grid-auto-rows: auto;
+    }
+
+    .gal__images--medium {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .gal__images--large {
+        grid-row: span 3;
+        grid-column: span 2;
+    }
+
+    /* Best Seller */
+    .best-seller__row {
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        margin: 36px 0;
+        row-gap: 48px;
+    }
+
+    .best-seller__img {
+        width: 304px;
+        height: 460px;
+    }
+
+    .see-all {
+        display: none;
+    }
+
+    /* Sub-Category Page */
+    .fiction__heading,
+    .non-fiction__heading,
+    .childrensbooks__heading {
+        font-size: 5.4rem;
+    }
+
+    /* Contact Page */
+    .label__contact {
+        width: 65%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    /* Home Page */
+    /* Header */
+    .menu-drawer {
+        inset: 0 50% 0 0;
+        padding: 30px;
+    }
+
+    .navbar__list-visible .navbar__link {
+        padding: 10px;
+    }
+
+    .header-action__sign_up {
+        display: none;
+    }
+
+    /* Hero */
+    .hero__info-heading {
+        font-size: 5rem;
+    }
+
+    /* Statics */
+    .stats__info {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+    }
+
+    .stats__heading {
+        font-size: 3rem;
+    }
+
+    .stats__qty strong {
+        font-size: 5.2rem;
+    }
+
+    .stats__info-item {
+        font-size: 2rem;
+    }
+
+    /* Gallery */
+    .gal__heading {
+        font-size: 3rem;
+    }
+
+    /* Advertising */
+    .ad__row iframe {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Best Seller */
+    .best-seller__info a:first-child {
+        display: flex;
+    }
+
+    .best-seller__heading {
+        font-size: 3rem;
+    }
+
+    .best-seller__cta {
+        display: none;
+    }
+
+    .best-seller__row {
+        grid-template-columns: 100%;
+        margin-top: 26px;
+        row-gap: 32px;
+    }
+
+    .best-seller__item {
+        width: 300px;
+    }
+
+    .best-seller__img {
+        width: 207px;
+        height: 312px;
+    }
+
+    .best-seller__row:hover > .best-seller__item:not(:hover) {
+        filter: blur(0px);
+        opacity: 1;
+        transform: scale(0.95, 0.95);
+    }
+
+    .see-all {
+        margin: 24px 0 46px;
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+    }
+
+    .see-all a {
+        --height: 48px;
+        border-radius: 16px;
+        min-width: 210px;
+    }
+
+    /* Sub-Category Page */
+    .fiction__heading,
+    .non-fiction__heading,
+    .childrensbooks__heading {
+        font-size: 4.4rem;
+    }
+
+    .fiction__desc,
+    .non-fiction__desc,
+    .childrensbooks__desc {
+        font-size: 1.6rem;
+    }
+
+    /* Contact Page */
+    .label__title-heading {
+        font-size: 3rem;
+    }
+
+    .label__title-desc {
+        font-size: 1.6rem;
+    }
+
+    .label__contact {
+        width: 90%;
+    }
+}

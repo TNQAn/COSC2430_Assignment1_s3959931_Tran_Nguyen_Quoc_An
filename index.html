@@ -63,13 +63,21 @@ Acknowledgement:
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- PC Header -->
     <header class="header">
         <div class="container">
             <div class="header-top">
+                <!-- Tablet/Mobile menu -->
+                <label for="menu-checkbox" class="ham-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </label>
+
                 <!-- Logo -->
                 <a href="#">
-                    <div class="logo">
+                    <div class="logo logo-center">
                         <span class="logo__circle"></span>
                         <span class="logo__text">
                             <span class="logo__brand">Literary</span>
@@ -104,10 +112,12 @@ Acknowledgement:
                             <a href="./Sub-Category page/non-fiction.html" class="navbar__link">Non-Fiction</a>
                             <ul class="navbar__sub-item">
                                 <li class="navbar__sub-type">
-                                    <a href="./Sub-Category page/non-fiction.html#BAF" class="sub-item">Business and Finance</a>
+                                    <a href="./Sub-Category page/non-fiction.html#BAF" class="sub-item">Business and
+                                        Finance</a>
                                 </li>
                                 <li class="navbar__sub-type">
-                                    <a href="./Sub-Category page/non-fiction.html#self-help" class="sub-item">Self-help</a>
+                                    <a href="./Sub-Category page/non-fiction.html#self-help"
+                                        class="sub-item">Self-help</a>
                                 </li>
                             </ul>
                         </li>
@@ -117,10 +127,12 @@ Acknowledgement:
                             <a href="./Sub-Category page/children'sbooks.html" class="navbar__link">Children's Books</a>
                             <ul class="navbar__sub-item">
                                 <li class="navbar__sub-type">
-                                    <a href="./Sub-Category page/children'sbooks.html#picturebooks" class="sub-item">Picture Books</a>
+                                    <a href="./Sub-Category page/children'sbooks.html#picturebooks"
+                                        class="sub-item">Picture Books</a>
                                 </li>
                                 <li class="navbar__sub-type">
-                                    <a href="./Sub-Category page/children'sbooks.html#youngadult" class="sub-item">Young Adult</a>
+                                    <a href="./Sub-Category page/children'sbooks.html#youngadult" class="sub-item">Young
+                                        Adult</a>
                                 </li>
                             </ul>
                         </li>
@@ -137,6 +149,85 @@ Acknowledgement:
                     <a href="#buy" class="btn header-action__sign_up">Buy Now</a>
                 </div>
             </div>
+        </div>
+    </header>
+
+    <!-- Tablet/Mobile header -->
+    <header class="mobile-header">
+        <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden>
+
+        <!-- Overlay -->
+        <label for="menu-checkbox" class="menu-overlay"></label>
+
+        <!-- Menu content -->
+        <div class="menu-drawer">
+            <!-- Logo -->
+            <a href="#">
+                <div class="logo logo-responsive">
+                    <span class="logo__circle"></span>
+                    <span class="logo__text">
+                        <span class="logo__brand">Literary</span>
+                        <span class="logo__brand logo__brand--small">Dreams</span>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Navbar -->
+            <nav class="navbar">
+                <ul class="navbar__list-visible">
+                    <!-- Navbar__item 1 -->
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Home</a>
+                    </li>
+
+                    <!-- Navbar__item 2 -->
+                    <li class="navbar__item">
+                        <a href="./Sub-Category page/fiction.html" class="navbar__link">Fiction</a>
+                        <ul class="navbar__sub-item--visible ">
+                            <li class="navbar__sub-type">
+                                <a href="./Sub-Category page/fiction.html#fantasy" class="sub-item">Fantasy</a>
+                            </li>
+                            <li class="navbar__sub-type">
+                                <a href="./Sub-Category page/fiction.html#romance" class="sub-item">Romance</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Navbar__item 3 -->
+                    <li class="navbar__item">
+                        <a href="./Sub-Category page/non-fiction.html" class="navbar__link">Non-Fiction</a>
+                        <ul class="navbar__sub-item--visible">
+                            <li class="navbar__sub-type">
+                                <a href="./Sub-Category page/non-fiction.html#BAF" class="sub-item">Business and
+                                    Finance</a>
+                            </li>
+                            <li class="navbar__sub-type">
+                                <a href="./Sub-Category page/non-fiction.html#self-help" class="sub-item">Self-help</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Navbar__item 4 -->
+                    <li class="navbar__item">
+                        <a href="./Sub-Category page/children'sbooks.html" class="navbar__link">Children's Books</a>
+                        <ul class="navbar__sub-item--visible">
+                            <li class="navbar__sub-type">
+                                <a href="./Sub-Category page/children'sbooks.html#picturebooks" class="sub-item">Picture
+                                    Books</a>
+                            </li>
+                            <li class="navbar__sub-type">
+                                <a href="./Sub-Category page/children'sbooks.html#youngadult" class="sub-item">Young
+                                    Adult</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Navbar__item 5 -->
+                    <li class="navbar__item">
+                        <a href="./Contact page/contact.html" class="navbar__link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -198,44 +289,34 @@ Acknowledgement:
                     <a href="./Book detail page/Fiction/Fantasy/fantasy01.html" class="gal__images--small">
                         <img class="gal__img" src="./assets/img/Fiction/Fantasy/fantasy01/fantasy01.jpg" alt="">
                     </a>
-                    <a href="./Book detail page/Children's Books/Picture Books/picturebooks02.html" class="gal__images--large">
+                    <a href="./Book detail page/Children's Books/Young Adult/youngadult01.html"
+                        class="gal__images--large">
                         <img class="gal__img"
-                            src="./assets/img/Children's Books/Picture Books/picturebooks02/picturebooks02.jpg" alt="">
+                            src="./assets/img/Children's Books/Young Adult/youngadult01/youngadult01.jpg" alt="">
                     </a>
-                    <a href="./Book detail page/Children's Books/Picture Books/picturebooks01.html" class="gal__images--medium">
+                    <a href="./Book detail page/Children's Books/Picture Books/picturebooks01.html"
+                        class="gal__images--medium">
                         <img class="gal__img"
                             src="./assets/img/Children's Books/Picture Books/picturebooks01/picturebooks01.jpg" alt="">
                     </a>
-                    <a href="./Book detail page/Fiction/Fantasy/fantasy02.html" class="gal__images--small">
-                        <img class="gal__img" src="./assets/img/Fiction/Fantasy/fantasy02/fantasy02.jpg" alt="">
+                    <a href="./Book detail page/Fiction/Romance/romance03.html" class="gal__images--small">
+                        <img class="gal__img" src="./assets/img/Fiction/Romance/romance03/romance03.jpg" alt="">
                     </a>
-                    <a href="./Book detail page/Fiction/Fantasy/fantasy03.html" class="gal__images--small">
-                        <img class="gal__img" src="./assets/img/Fiction/Fantasy/fantasy03/fantasy03.jpg" alt="">
-                    </a>
-                    <a href="./Book detail page/Children's Books/Young Adult/youngadult02.html" class="gal__images--small">
+                    <a href="./Book detail page/Children's Books/Picture Books/picturebooks02.html"
+                        class="gal__images--small">
                         <img class="gal__img"
-                            src="./assets/img/Children's Books/Young Adult/youngadult02/youngadult02.jpg" alt="">
+                            src="./assets/img/Children's Books/Picture Books/picturebooks02/picturebooks02.jpg" alt="">
                     </a>
-                    <a href="./Book detail page/Children's Books/Young Adult/youngadult04.html" class="gal__images--small">
-                        <img class="gal__img"
-                            src="./assets/img/Children's Books/Young Adult/youngadult04/youngadult04.jpg" alt="">
-                    </a>
-                    <a href="./Book detail page/Children's Books/Picture Books/picturebooks04.html" class="gal__images--small">
-                        <img class="gal__img"
-                            src="./assets/img/Children's Books/Picture Books/picturebooks04/picturebooks04.jpg" alt="">
+                    <a href="./Book detail page/Fiction/Romance/romance04.html" class="gal__images--small">
+                        <img class="gal__img" src="./assets/img/Fiction/Romance/romance04/romance04.png" alt="">
                     </a>
                     <a href="./Book detail page/Fiction/Romance/romance02.html" class="gal__images--small">
                         <img class="gal__img" src="./assets/img/Fiction/Romance/romance02/romance02.jpg" alt="">
                     </a>
-                    <a href="./Book detail page/Fiction/Fantasy/fantasy05.html" class="gal__images--tiny">
-                        <img class="gal__img" src="./assets/img/Fiction/Fantasy/fantasy05/fantasy05.jpg" alt="">
-                    </a>
-                    <a href="./Book detail page/Children's Books/Young Adult/youngadult03.html" class="gal__images--tiny">
+                    <a href="./Book detail page/Children's Books/Picture Books/picturebooks04.html"
+                        class="gal__images--medium">
                         <img class="gal__img"
-                            src="./assets/img/Children's Books/Young Adult/youngadult03/youngadult03.jpg" alt="">
-                    </a>
-                    <a href="./Book detail page/Fiction/Fantasy/fantasy06.html" class="gal__images--tiny">
-                        <img class="gal__img" src="./assets/img/Fiction/Fantasy/fantasy06/fantasy06.jpg" alt="">
+                            src="./assets/img/Children's Books/Picture Books/picturebooks04/picturebooks04.jpg" alt="">
                     </a>
                 </div>
             </div>
@@ -252,11 +333,13 @@ Acknowledgement:
                             learning and personal development that lasts a lifetime.</p>
                     </div>
 
-                    <iframe width="520" height="292.5" src="https://www.youtube.com/embed/xqMozc4K4pg"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
+                    <div class = "ad__video">
+                        <iframe width="520" height="292.5" src="https://www.youtube.com/embed/xqMozc4K4pg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
 
                 </div>
             </div>
@@ -308,7 +391,8 @@ Acknowledgement:
 
                                 <div class="best-seller__icon">
                                     <div class="best-seller__symbol-icons">
-                                        <a href="./Book detail page/Fiction/Romance/romance01.html" class="best-seller__icon--common best-seller__icon--general-1">
+                                        <a href="./Book detail page/Fiction/Romance/romance01.html"
+                                            class="best-seller__icon--common best-seller__icon--general-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
                                                 fill="currentColor">
                                                 <path d=" M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0
@@ -319,14 +403,16 @@ Acknowledgement:
                                                 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Fiction/Romance/romance01.html" class="best-seller__icon--common best-seller__icon--general-2">
+                                        <a href="./Book detail page/Fiction/Romance/romance01.html"
+                                            class="best-seller__icon--common best-seller__icon--general-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
                                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Fiction/Romance/romance01.html" class="best-seller__icon--common best-seller__icon--general-3">
+                                        <a href="./Book detail page/Fiction/Romance/romance01.html"
+                                            class="best-seller__icon--common best-seller__icon--general-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
@@ -374,7 +460,8 @@ Acknowledgement:
 
                                 <div class="best-seller__icon">
                                     <div class="best-seller__symbol-icons">
-                                        <a href="./Book detail page/Fiction/Fantasy/fantasy07.html" class="best-seller__icon--common best-seller__icon--general-1">
+                                        <a href="./Book detail page/Fiction/Fantasy/fantasy07.html"
+                                            class="best-seller__icon--common best-seller__icon--general-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
                                                 fill="currentColor">
                                                 <path d=" M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0
@@ -385,14 +472,16 @@ Acknowledgement:
                                                 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Fiction/Fantasy/fantasy07.html" class="best-seller__icon--common best-seller__icon--general-2">
+                                        <a href="./Book detail page/Fiction/Fantasy/fantasy07.html"
+                                            class="best-seller__icon--common best-seller__icon--general-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
                                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Fiction/Fantasy/fantasy07.html" class="best-seller__icon--common best-seller__icon--general-3">
+                                        <a href="./Book detail page/Fiction/Fantasy/fantasy07.html"
+                                            class="best-seller__icon--common best-seller__icon--general-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
@@ -441,7 +530,8 @@ Acknowledgement:
 
                                 <div class="best-seller__icon">
                                     <div class="best-seller__symbol-icons">
-                                        <a href="./Book detail page/Fiction/Fantasy/fantasy03.html" class="best-seller__icon--common best-seller__icon--general-1">
+                                        <a href="./Book detail page/Fiction/Fantasy/fantasy03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
                                                 fill="currentColor">
                                                 <path d=" M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0
@@ -452,14 +542,16 @@ Acknowledgement:
                                                 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Fiction/Fantasy/fantasy03.html" class="best-seller__icon--common best-seller__icon--general-2">
+                                        <a href="./Book detail page/Fiction/Fantasy/fantasy03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
                                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Fiction/Fantasy/fantasy03.html" class="best-seller__icon--common best-seller__icon--general-3">
+                                        <a href="./Book detail page/Fiction/Fantasy/fantasy03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
@@ -505,7 +597,8 @@ Acknowledgement:
                                 </div>
                                 <div class="best-seller__icon">
                                     <div class="best-seller__symbol-icons">
-                                        <a href="./Book detail page/Fiction/Romance/romance03.html" class="best-seller__icon--common best-seller__icon--general-1">
+                                        <a href="./Book detail page/Fiction/Romance/romance03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
                                                 fill="currentColor">
                                                 <path d=" M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0
@@ -516,14 +609,16 @@ Acknowledgement:
                                                 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Fiction/Romance/romance03.html" class="best-seller__icon--common best-seller__icon--general-2">
+                                        <a href="./Book detail page/Fiction/Romance/romance03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
                                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Fiction/Romance/romance03.html" class="best-seller__icon--common best-seller__icon--general-3">
+                                        <a href="./Book detail page/Fiction/Romance/romance03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
@@ -543,6 +638,16 @@ Acknowledgement:
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="see-all">
+                    <a href="./Sub-Category page/fiction.html" class="btn">See All Books
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
                 </div>
 
                 <!-- Non-Fiction Books -->
@@ -588,7 +693,8 @@ Acknowledgement:
 
                                 <div class="best-seller__icon">
                                     <div class="best-seller__symbol-icons">
-                                        <a href="./Book detail page/Non-Fiction/Business and Finance/businessandfinance03.html" class="best-seller__icon--common best-seller__icon--general-1">
+                                        <a href="./Book detail page/Non-Fiction/Business and Finance/businessandfinance03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
                                                 fill="currentColor">
                                                 <path d=" M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0
@@ -599,14 +705,16 @@ Acknowledgement:
                                                 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Non-Fiction/Business and Finance/businessandfinance03.html" class="best-seller__icon--common best-seller__icon--general-2">
+                                        <a href="./Book detail page/Non-Fiction/Business and Finance/businessandfinance03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
                                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Non-Fiction/Business and Finance/businessandfinance03.html" class="best-seller__icon--common best-seller__icon--general-3">
+                                        <a href="./Book detail page/Non-Fiction/Business and Finance/businessandfinance03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
@@ -629,8 +737,8 @@ Acknowledgement:
                         <!-- Best-seller item 2 -->
                         <div class="best-seller__item">
                             <a href="./Book detail page/Non-Fiction/Self-help/self-help01.html">
-                                <img src="./assets/img/Non-Fiction/Self-help/self-help01/self-help01.jpg" alt="Thinking, Fast and Slow"
-                                    class="best-seller__img">
+                                <img src="./assets/img/Non-Fiction/Self-help/self-help01/self-help01.jpg"
+                                    alt="Thinking, Fast and Slow" class="best-seller__img">
                                 </img>
                             </a>
 
@@ -654,7 +762,8 @@ Acknowledgement:
 
                                 <div class="best-seller__icon">
                                     <div class="best-seller__symbol-icons">
-                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help01.html" class="best-seller__icon--common best-seller__icon--general-1">
+                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help01.html"
+                                            class="best-seller__icon--common best-seller__icon--general-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
                                                 fill="currentColor">
                                                 <path d=" M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0
@@ -665,14 +774,16 @@ Acknowledgement:
                                                 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help01.html" class="best-seller__icon--common best-seller__icon--general-2">
+                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help01.html"
+                                            class="best-seller__icon--common best-seller__icon--general-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
                                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help01.html" class="best-seller__icon--common best-seller__icon--general-3">
+                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help01.html"
+                                            class="best-seller__icon--common best-seller__icon--general-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
@@ -719,7 +830,8 @@ Acknowledgement:
 
                                 <div class="best-seller__icon">
                                     <div class="best-seller__symbol-icons">
-                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help02.html" class="best-seller__icon--common best-seller__icon--general-1">
+                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help02.html"
+                                            class="best-seller__icon--common best-seller__icon--general-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
                                                 fill="currentColor">
                                                 <path d=" M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0
@@ -730,14 +842,16 @@ Acknowledgement:
                                                 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help02.html" class="best-seller__icon--common best-seller__icon--general-2">
+                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help02.html"
+                                            class="best-seller__icon--common best-seller__icon--general-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
                                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help02.html" class="best-seller__icon--common best-seller__icon--general-3">
+                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help02.html"
+                                            class="best-seller__icon--common best-seller__icon--general-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
@@ -785,7 +899,8 @@ Acknowledgement:
                                 </div>
                                 <div class="best-seller__icon">
                                     <div class="best-seller__symbol-icons">
-                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help03.html" class="best-seller__icon--common best-seller__icon--general-1">
+                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
                                                 fill="currentColor">
                                                 <path d=" M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0
@@ -796,14 +911,16 @@ Acknowledgement:
                                                 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help03.html" class="best-seller__icon--common best-seller__icon--general-2">
+                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
                                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help03.html" class="best-seller__icon--common best-seller__icon--general-3">
+                                        <a href="./Book detail page/Non-Fiction/Self-help/self-help03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
@@ -823,6 +940,16 @@ Acknowledgement:
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="see-all">
+                    <a href="./Sub-Category page/fiction.html" class="btn">See All Books
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
                 </div>
 
                 <!-- Children's Books -->
@@ -868,7 +995,8 @@ Acknowledgement:
 
                                 <div class="best-seller__icon">
                                     <div class="best-seller__symbol-icons">
-                                        <a href="./Book detail page/Children's Books/Picture Books/picturebooks01.html" class="best-seller__icon--common best-seller__icon--general-1">
+                                        <a href="./Book detail page/Children's Books/Picture Books/picturebooks01.html"
+                                            class="best-seller__icon--common best-seller__icon--general-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
                                                 fill="currentColor">
                                                 <path d=" M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0
@@ -879,14 +1007,16 @@ Acknowledgement:
                                                 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Children's Books/Picture Books/picturebooks01.html" class="best-seller__icon--common best-seller__icon--general-2">
+                                        <a href="./Book detail page/Children's Books/Picture Books/picturebooks01.html"
+                                            class="best-seller__icon--common best-seller__icon--general-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
                                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Children's Books/Picture Books/picturebooks01.html" class="best-seller__icon--common best-seller__icon--general-3">
+                                        <a href="./Book detail page/Children's Books/Picture Books/picturebooks01.html"
+                                            class="best-seller__icon--common best-seller__icon--general-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
@@ -934,7 +1064,8 @@ Acknowledgement:
 
                                 <div class="best-seller__icon">
                                     <div class="best-seller__symbol-icons">
-                                        <a href="./Book detail page/Children's Books/Picture Books/picturebooks03.html" class="best-seller__icon--common best-seller__icon--general-1">
+                                        <a href="./Book detail page/Children's Books/Picture Books/picturebooks03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
                                                 fill="currentColor">
                                                 <path d=" M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0
@@ -945,14 +1076,16 @@ Acknowledgement:
                                                 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Children's Books/Picture Books/picturebooks03.html" class="best-seller__icon--common best-seller__icon--general-2">
+                                        <a href="./Book detail page/Children's Books/Picture Books/picturebooks03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
                                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Children's Books/Picture Books/picturebooks03.html" class="best-seller__icon--common best-seller__icon--general-3">
+                                        <a href="./Book detail page/Children's Books/Picture Books/picturebooks03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
@@ -998,7 +1131,8 @@ Acknowledgement:
 
                                 <div class="best-seller__icon">
                                     <div class="best-seller__symbol-icons">
-                                        <a href="./Book detail page/Children's Books/Young Adult/youngadult02.html" class="best-seller__icon--common best-seller__icon--general-1">
+                                        <a href="./Book detail page/Children's Books/Young Adult/youngadult02.html"
+                                            class="best-seller__icon--common best-seller__icon--general-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
                                                 fill="currentColor">
                                                 <path d=" M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0
@@ -1009,14 +1143,16 @@ Acknowledgement:
                                                 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Children's Books/Young Adult/youngadult02.html" class="best-seller__icon--common best-seller__icon--general-2">
+                                        <a href="./Book detail page/Children's Books/Young Adult/youngadult02.html"
+                                            class="best-seller__icon--common best-seller__icon--general-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
                                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Children's Books/Young Adult/youngadult02.html" class="best-seller__icon--common best-seller__icon--general-3">
+                                        <a href="./Book detail page/Children's Books/Young Adult/youngadult02.html"
+                                            class="best-seller__icon--common best-seller__icon--general-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
@@ -1062,7 +1198,8 @@ Acknowledgement:
                                 </div>
                                 <div class="best-seller__icon">
                                     <div class="best-seller__symbol-icons">
-                                        <a href="./Book detail page/Children's Books/Young Adult/youngadult03.html" class="best-seller__icon--common best-seller__icon--general-1">
+                                        <a href="./Book detail page/Children's Books/Young Adult/youngadult03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
                                                 fill="currentColor">
                                                 <path d=" M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0
@@ -1073,14 +1210,16 @@ Acknowledgement:
                                                 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Children's Books/Young Adult/youngadult03.html" class="best-seller__icon--common best-seller__icon--general-2">
+                                        <a href="./Book detail page/Children's Books/Young Adult/youngadult03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
                                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                                             </svg>
                                         </a>
-                                        <a href="./Book detail page/Children's Books/Young Adult/youngadult03.html" class="best-seller__icon--common best-seller__icon--general-3">
+                                        <a href="./Book detail page/Children's Books/Young Adult/youngadult03.html"
+                                            class="best-seller__icon--common best-seller__icon--general-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
                                                 fill="currentColor">
                                                 <path
@@ -1099,6 +1238,16 @@ Acknowledgement:
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="see-all">
+                    <a href="./Sub-Category page/fiction.html" class="btn">See All Books
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
