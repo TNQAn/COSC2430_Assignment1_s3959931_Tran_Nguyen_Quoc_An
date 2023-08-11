@@ -244,10 +244,6 @@ Acknowledgement:
         width: 100%;
     }
 
-    .book__cta {
-        justify-content: end;
-    }
-
     /* Contact Page */
     .label__contact {
         flex-direction: column;
@@ -318,6 +314,11 @@ Acknowledgement:
     .non-fiction__heading,
     .childrensbooks__heading {
         font-size: 5.4rem;
+    }
+
+    /* Book Details Page*/
+    .book__cta {
+        justify-content: flex-end;
     }
 
     /* Contact Page */
