@@ -439,6 +439,11 @@ Acknowledgement:
         font-size: 1.6rem;
     }
 
+    /* Book Details Page */ 
+    .book__cta {
+        justify-content: center;
+    }
+
     /* Contact Page */
     .label__title-heading {
         font-size: 3rem;
