@@ -309,7 +309,8 @@ button {
 }
 
 .hero__images {
-    margin-top: 82px;
+    margin: 82px auto 0;
+    width: 85%;
     display: flex;
     align-items: flex-end;
     pointer-events: none;
@@ -450,7 +451,7 @@ button {
 }
 
 .gal__images--medium {
-    grid-row: span 3;
+    grid-row: span 4;
     grid-column: span 3;
 }
 
